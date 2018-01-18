@@ -1,0 +1,832 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'F:\\node\\node.exe',
+1 verbose cli   'F:\\node\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'update',
+1 verbose cli   '--scripts-prepend-node-path=auto' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.5
+4 silly mapToRegistry name body-parser
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'body-parser',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: 'body-parser',
+7 silly mapToRegistry   name: 'body-parser',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+9 silly mapToRegistry name cookie-parser
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'cookie-parser',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'cookie-parser',
+12 silly mapToRegistry   name: 'cookie-parser',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/cookie-parser
+14 silly mapToRegistry name debug
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'debug',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   escapedName: 'debug',
+17 silly mapToRegistry   name: 'debug',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/debug
+19 silly mapToRegistry name ejs
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry data Result {
+22 silly mapToRegistry   raw: 'ejs',
+22 silly mapToRegistry   scope: null,
+22 silly mapToRegistry   escapedName: 'ejs',
+22 silly mapToRegistry   name: 'ejs',
+22 silly mapToRegistry   rawSpec: '',
+22 silly mapToRegistry   spec: 'latest',
+22 silly mapToRegistry   type: 'tag' }
+23 silly mapToRegistry uri https://registry.npmjs.org/ejs
+24 silly mapToRegistry name express
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry data Result {
+27 silly mapToRegistry   raw: 'express',
+27 silly mapToRegistry   scope: null,
+27 silly mapToRegistry   escapedName: 'express',
+27 silly mapToRegistry   name: 'express',
+27 silly mapToRegistry   rawSpec: '',
+27 silly mapToRegistry   spec: 'latest',
+27 silly mapToRegistry   type: 'tag' }
+28 silly mapToRegistry uri https://registry.npmjs.org/express
+29 silly mapToRegistry name redis
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: 'redis',
+32 silly mapToRegistry   scope: null,
+32 silly mapToRegistry   escapedName: 'redis',
+32 silly mapToRegistry   name: 'redis',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/redis
+34 silly mapToRegistry name serve-favicon
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry data Result {
+37 silly mapToRegistry   raw: 'serve-favicon',
+37 silly mapToRegistry   scope: null,
+37 silly mapToRegistry   escapedName: 'serve-favicon',
+37 silly mapToRegistry   name: 'serve-favicon',
+37 silly mapToRegistry   rawSpec: '',
+37 silly mapToRegistry   spec: 'latest',
+37 silly mapToRegistry   type: 'tag' }
+38 silly mapToRegistry uri https://registry.npmjs.org/serve-favicon
+39 silly mapToRegistry name bcrypt
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry data Result {
+42 silly mapToRegistry   raw: 'bcrypt',
+42 silly mapToRegistry   scope: null,
+42 silly mapToRegistry   escapedName: 'bcrypt',
+42 silly mapToRegistry   name: 'bcrypt',
+42 silly mapToRegistry   rawSpec: '',
+42 silly mapToRegistry   spec: 'latest',
+42 silly mapToRegistry   type: 'tag' }
+43 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+44 verbose request uri https://registry.npmjs.org/debug
+45 verbose request no auth needed
+46 info attempt registry request try #1 at 19:43:41
+47 verbose request id 400b6575887150d4
+48 verbose etag "5a3457c4-191d3"
+49 verbose lastModified Fri, 15 Dec 2017 23:16:20 GMT
+50 http request GET https://registry.npmjs.org/debug
+51 verbose request uri https://registry.npmjs.org/cookie-parser
+52 verbose request no auth needed
+53 info attempt registry request try #1 at 19:43:41
+54 verbose etag "5a3433c9-6c77"
+55 verbose lastModified Fri, 15 Dec 2017 20:42:49 GMT
+56 http request GET https://registry.npmjs.org/cookie-parser
+57 verbose request uri https://registry.npmjs.org/body-parser
+58 verbose request no auth needed
+59 info attempt registry request try #1 at 19:43:41
+60 verbose etag "5a3567e4-23432"
+61 verbose lastModified Sat, 16 Dec 2017 18:37:24 GMT
+62 http request GET https://registry.npmjs.org/body-parser
+63 verbose request uri https://registry.npmjs.org/ejs
+64 verbose request no auth needed
+65 info attempt registry request try #1 at 19:43:41
+66 verbose etag "5a33dd33-1148a"
+67 verbose lastModified Fri, 15 Dec 2017 14:33:23 GMT
+68 http request GET https://registry.npmjs.org/ejs
+69 verbose request uri https://registry.npmjs.org/serve-favicon
+70 verbose request no auth needed
+71 info attempt registry request try #1 at 19:43:41
+72 verbose etag "5a356f0c-97f1"
+73 verbose lastModified Sat, 16 Dec 2017 19:07:56 GMT
+74 http request GET https://registry.npmjs.org/serve-favicon
+75 verbose request uri https://registry.npmjs.org/bcrypt
+76 verbose request no auth needed
+77 info attempt registry request try #1 at 19:43:41
+78 verbose etag "5a2da5cd-1808d"
+79 verbose lastModified Sun, 10 Dec 2017 21:23:25 GMT
+80 http request GET https://registry.npmjs.org/bcrypt
+81 verbose request uri https://registry.npmjs.org/redis
+82 verbose request no auth needed
+83 info attempt registry request try #1 at 19:43:41
+84 verbose etag "5a2f47e2-28227"
+85 verbose lastModified Tue, 12 Dec 2017 3:07:14 GMT
+86 http request GET https://registry.npmjs.org/redis
+87 verbose request uri https://registry.npmjs.org/express
+88 verbose request no auth needed
+89 info attempt registry request try #1 at 19:43:41
+90 verbose etag "5a35a29b-938d2"
+91 verbose lastModified Sat, 16 Dec 2017 22:47:55 GMT
+92 http request GET https://registry.npmjs.org/express
+93 http 304 https://registry.npmjs.org/body-parser
+94 verbose headers { date: 'Mon, 18 Dec 2017 11:43:44 GMT',
+94 verbose headers   via: '1.1 varnish',
+94 verbose headers   'cache-control': 'max-age=300',
+94 verbose headers   etag: '"5a3567e4-23432"',
+94 verbose headers   age: '3193',
+94 verbose headers   connection: 'keep-alive',
+94 verbose headers   'x-served-by': 'cache-hnd18721-HND',
+94 verbose headers   'x-cache': 'HIT',
+94 verbose headers   'x-cache-hits': '11',
+94 verbose headers   'x-timer': 'S1513597425.934921,VS0,VE0',
+94 verbose headers   vary: 'Accept-Encoding, Accept' }
+95 silly get cb [ 304,
+95 silly get   { date: 'Mon, 18 Dec 2017 11:43:44 GMT',
+95 silly get     via: '1.1 varnish',
+95 silly get     'cache-control': 'max-age=300',
+95 silly get     etag: '"5a3567e4-23432"',
+95 silly get     age: '3193',
+95 silly get     connection: 'keep-alive',
+95 silly get     'x-served-by': 'cache-hnd18721-HND',
+95 silly get     'x-cache': 'HIT',
+95 silly get     'x-cache-hits': '11',
+95 silly get     'x-timer': 'S1513597425.934921,VS0,VE0',
+95 silly get     vary: 'Accept-Encoding, Accept' } ]
+96 verbose etag https://registry.npmjs.org/body-parser from cache
+97 verbose get saving body-parser to D:\Develop\nodejs\node_cache\registry.npmjs.org\body-parser\.cache.json
+98 verbose correctMkdir D:\Develop\nodejs\node_cache correctMkdir not in flight; initializing
+99 http 304 https://registry.npmjs.org/bcrypt
+100 verbose headers { date: 'Mon, 18 Dec 2017 11:43:44 GMT',
+100 verbose headers   via: '1.1 varnish',
+100 verbose headers   'cache-control': 'max-age=300',
+100 verbose headers   etag: '"5a2da5cd-1808d"',
+100 verbose headers   age: '1112',
+100 verbose headers   connection: 'keep-alive',
+100 verbose headers   'x-served-by': 'cache-hnd18731-HND',
+100 verbose headers   'x-cache': 'HIT',
+100 verbose headers   'x-cache-hits': '1',
+100 verbose headers   'x-timer': 'S1513597425.926360,VS0,VE0',
+100 verbose headers   vary: 'Accept-Encoding, Accept' }
+101 silly get cb [ 304,
+101 silly get   { date: 'Mon, 18 Dec 2017 11:43:44 GMT',
+101 silly get     via: '1.1 varnish',
+101 silly get     'cache-control': 'max-age=300',
+101 silly get     etag: '"5a2da5cd-1808d"',
+101 silly get     age: '1112',
+101 silly get     connection: 'keep-alive',
+101 silly get     'x-served-by': 'cache-hnd18731-HND',
+101 silly get     'x-cache': 'HIT',
+101 silly get     'x-cache-hits': '1',
+101 silly get     'x-timer': 'S1513597425.926360,VS0,VE0',
+101 silly get     vary: 'Accept-Encoding, Accept' } ]
+102 verbose etag https://registry.npmjs.org/bcrypt from cache
+103 verbose get saving bcrypt to D:\Develop\nodejs\node_cache\registry.npmjs.org\bcrypt\.cache.json
+104 verbose correctMkdir D:\Develop\nodejs\node_cache correctMkdir already in flight; waiting
+105 http 304 https://registry.npmjs.org/ejs
+106 verbose headers { date: 'Mon, 18 Dec 2017 11:43:45 GMT',
+106 verbose headers   via: '1.1 varnish',
+106 verbose headers   'cache-control': 'max-age=300',
+106 verbose headers   etag: '"5a33dd33-1148a"',
+106 verbose headers   age: '643',
+106 verbose headers   connection: 'keep-alive',
+106 verbose headers   'x-served-by': 'cache-hnd18727-HND',
+106 verbose headers   'x-cache': 'HIT',
+106 verbose headers   'x-cache-hits': '1',
+106 verbose headers   'x-timer': 'S1513597425.290192,VS0,VE0',
+106 verbose headers   vary: 'Accept-Encoding, Accept' }
+107 silly get cb [ 304,
+107 silly get   { date: 'Mon, 18 Dec 2017 11:43:45 GMT',
+107 silly get     via: '1.1 varnish',
+107 silly get     'cache-control': 'max-age=300',
+107 silly get     etag: '"5a33dd33-1148a"',
+107 silly get     age: '643',
+107 silly get     connection: 'keep-alive',
+107 silly get     'x-served-by': 'cache-hnd18727-HND',
+107 silly get     'x-cache': 'HIT',
+107 silly get     'x-cache-hits': '1',
+107 silly get     'x-timer': 'S1513597425.290192,VS0,VE0',
+107 silly get     vary: 'Accept-Encoding, Accept' } ]
+108 verbose etag https://registry.npmjs.org/ejs from cache
+109 verbose get saving ejs to D:\Develop\nodejs\node_cache\registry.npmjs.org\ejs\.cache.json
+110 verbose correctMkdir D:\Develop\nodejs\node_cache correctMkdir not in flight; initializing
+111 http 200 https://registry.npmjs.org/express
+112 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+112 verbose headers   server: 'UploadServer',
+112 verbose headers   'cache-control': 'max-age=300',
+112 verbose headers   'last-modified': 'Mon, 18 Dec 2017 6:25:45 GMT',
+112 verbose headers   etag: '"5a375f69-938e2"',
+112 verbose headers   'content-encoding': 'gzip',
+112 verbose headers   'content-length': '47721',
+112 verbose headers   'accept-ranges': 'bytes',
+112 verbose headers   date: 'Mon, 18 Dec 2017 11:43:45 GMT',
+112 verbose headers   via: '1.1 varnish',
+112 verbose headers   age: '4612',
+112 verbose headers   connection: 'keep-alive',
+112 verbose headers   'x-served-by': 'cache-hnd18736-HND',
+112 verbose headers   'x-cache': 'HIT',
+112 verbose headers   'x-cache-hits': '18',
+112 verbose headers   'x-timer': 'S1513597425.085232,VS0,VE0',
+112 verbose headers   vary: 'Accept-Encoding, Accept' }
+113 silly get cb [ 200,
+113 silly get   { 'content-type': 'application/json; charset=UTF-8',
+113 silly get     server: 'UploadServer',
+113 silly get     'cache-control': 'max-age=300',
+113 silly get     'last-modified': 'Mon, 18 Dec 2017 6:25:45 GMT',
+113 silly get     etag: '"5a375f69-938e2"',
+113 silly get     'content-encoding': 'gzip',
+113 silly get     'content-length': '47721',
+113 silly get     'accept-ranges': 'bytes',
+113 silly get     date: 'Mon, 18 Dec 2017 11:43:45 GMT',
+113 silly get     via: '1.1 varnish',
+113 silly get     age: '4612',
+113 silly get     connection: 'keep-alive',
+113 silly get     'x-served-by': 'cache-hnd18736-HND',
+113 silly get     'x-cache': 'HIT',
+113 silly get     'x-cache-hits': '18',
+113 silly get     'x-timer': 'S1513597425.085232,VS0,VE0',
+113 silly get     vary: 'Accept-Encoding, Accept' } ]
+114 verbose get saving express to D:\Develop\nodejs\node_cache\registry.npmjs.org\express\.cache.json
+115 verbose correctMkdir D:\Develop\nodejs\node_cache correctMkdir not in flight; initializing
+116 http 304 https://registry.npmjs.org/cookie-parser
+117 verbose headers { date: 'Mon, 18 Dec 2017 11:43:45 GMT',
+117 verbose headers   via: '1.1 varnish',
+117 verbose headers   'cache-control': 'max-age=300',
+117 verbose headers   etag: '"5a3433c9-6c77"',
+117 verbose headers   age: '5909',
+117 verbose headers   connection: 'keep-alive',
+117 verbose headers   'x-served-by': 'cache-hnd18739-HND',
+117 verbose headers   'x-cache': 'HIT',
+117 verbose headers   'x-cache-hits': '7',
+117 verbose headers   'x-timer': 'S1513597426.984576,VS0,VE0',
+117 verbose headers   vary: 'Accept-Encoding, Accept' }
+118 silly get cb [ 304,
+118 silly get   { date: 'Mon, 18 Dec 2017 11:43:45 GMT',
+118 silly get     via: '1.1 varnish',
+118 silly get     'cache-control': 'max-age=300',
+118 silly get     etag: '"5a3433c9-6c77"',
+118 silly get     age: '5909',
+118 silly get     connection: 'keep-alive',
+118 silly get     'x-served-by': 'cache-hnd18739-HND',
+118 silly get     'x-cache': 'HIT',
+118 silly get     'x-cache-hits': '7',
+118 silly get     'x-timer': 'S1513597426.984576,VS0,VE0',
+118 silly get     vary: 'Accept-Encoding, Accept' } ]
+119 verbose etag https://registry.npmjs.org/cookie-parser from cache
+120 verbose get saving cookie-parser to D:\Develop\nodejs\node_cache\registry.npmjs.org\cookie-parser\.cache.json
+121 verbose correctMkdir D:\Develop\nodejs\node_cache correctMkdir not in flight; initializing
+122 http 304 https://registry.npmjs.org/serve-favicon
+123 verbose headers { date: 'Mon, 18 Dec 2017 11:43:44 GMT',
+123 verbose headers   via: '1.1 varnish',
+123 verbose headers   'cache-control': 'max-age=300',
+123 verbose headers   etag: '"5a356f0c-97f1"',
+123 verbose headers   age: '12427',
+123 verbose headers   connection: 'keep-alive',
+123 verbose headers   'x-served-by': 'cache-hnd18732-HND',
+123 verbose headers   'x-cache': 'HIT',
+123 verbose headers   'x-cache-hits': '25',
+123 verbose headers   'x-timer': 'S1513597425.926621,VS0,VE0',
+123 verbose headers   vary: 'Accept-Encoding, Accept' }
+124 silly get cb [ 304,
+124 silly get   { date: 'Mon, 18 Dec 2017 11:43:44 GMT',
+124 silly get     via: '1.1 varnish',
+124 silly get     'cache-control': 'max-age=300',
+124 silly get     etag: '"5a356f0c-97f1"',
+124 silly get     age: '12427',
+124 silly get     connection: 'keep-alive',
+124 silly get     'x-served-by': 'cache-hnd18732-HND',
+124 silly get     'x-cache': 'HIT',
+124 silly get     'x-cache-hits': '25',
+124 silly get     'x-timer': 'S1513597425.926621,VS0,VE0',
+124 silly get     vary: 'Accept-Encoding, Accept' } ]
+125 verbose etag https://registry.npmjs.org/serve-favicon from cache
+126 verbose get saving serve-favicon to D:\Develop\nodejs\node_cache\registry.npmjs.org\serve-favicon\.cache.json
+127 verbose correctMkdir D:\Develop\nodejs\node_cache correctMkdir not in flight; initializing
+128 http 304 https://registry.npmjs.org/redis
+129 verbose headers { date: 'Mon, 18 Dec 2017 11:43:45 GMT',
+129 verbose headers   via: '1.1 varnish',
+129 verbose headers   'cache-control': 'max-age=300',
+129 verbose headers   etag: '"5a2f47e2-28227"',
+129 verbose headers   age: '10809',
+129 verbose headers   connection: 'keep-alive',
+129 verbose headers   'x-served-by': 'cache-hnd18742-HND',
+129 verbose headers   'x-cache': 'HIT',
+129 verbose headers   'x-cache-hits': '5',
+129 verbose headers   'x-timer': 'S1513597426.591728,VS0,VE0',
+129 verbose headers   vary: 'Accept-Encoding, Accept' }
+130 silly get cb [ 304,
+130 silly get   { date: 'Mon, 18 Dec 2017 11:43:45 GMT',
+130 silly get     via: '1.1 varnish',
+130 silly get     'cache-control': 'max-age=300',
+130 silly get     etag: '"5a2f47e2-28227"',
+130 silly get     age: '10809',
+130 silly get     connection: 'keep-alive',
+130 silly get     'x-served-by': 'cache-hnd18742-HND',
+130 silly get     'x-cache': 'HIT',
+130 silly get     'x-cache-hits': '5',
+130 silly get     'x-timer': 'S1513597426.591728,VS0,VE0',
+130 silly get     vary: 'Accept-Encoding, Accept' } ]
+131 verbose etag https://registry.npmjs.org/redis from cache
+132 verbose get saving redis to D:\Develop\nodejs\node_cache\registry.npmjs.org\redis\.cache.json
+133 verbose correctMkdir D:\Develop\nodejs\node_cache correctMkdir not in flight; initializing
+134 http 200 https://registry.npmjs.org/debug
+135 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+135 verbose headers   server: 'UploadServer',
+135 verbose headers   'cache-control': 'max-age=300',
+135 verbose headers   'last-modified': 'Mon, 18 Dec 2017 9:50:25 GMT',
+135 verbose headers   etag: '"5a378f61-191e3"',
+135 verbose headers   'content-encoding': 'gzip',
+135 verbose headers   'content-length': '17456',
+135 verbose headers   'accept-ranges': 'bytes',
+135 verbose headers   date: 'Mon, 18 Dec 2017 11:43:44 GMT',
+135 verbose headers   via: '1.1 varnish',
+135 verbose headers   age: '6736',
+135 verbose headers   connection: 'keep-alive',
+135 verbose headers   'x-served-by': 'cache-hnd18748-HND',
+135 verbose headers   'x-cache': 'HIT',
+135 verbose headers   'x-cache-hits': '121',
+135 verbose headers   'x-timer': 'S1513597425.925422,VS0,VE0',
+135 verbose headers   vary: 'Accept-Encoding, Accept' }
+136 silly get cb [ 200,
+136 silly get   { 'content-type': 'application/json; charset=UTF-8',
+136 silly get     server: 'UploadServer',
+136 silly get     'cache-control': 'max-age=300',
+136 silly get     'last-modified': 'Mon, 18 Dec 2017 9:50:25 GMT',
+136 silly get     etag: '"5a378f61-191e3"',
+136 silly get     'content-encoding': 'gzip',
+136 silly get     'content-length': '17456',
+136 silly get     'accept-ranges': 'bytes',
+136 silly get     date: 'Mon, 18 Dec 2017 11:43:44 GMT',
+136 silly get     via: '1.1 varnish',
+136 silly get     age: '6736',
+136 silly get     connection: 'keep-alive',
+136 silly get     'x-served-by': 'cache-hnd18748-HND',
+136 silly get     'x-cache': 'HIT',
+136 silly get     'x-cache-hits': '121',
+136 silly get     'x-timer': 'S1513597425.925422,VS0,VE0',
+136 silly get     vary: 'Accept-Encoding, Accept' } ]
+137 verbose get saving debug to D:\Develop\nodejs\node_cache\registry.npmjs.org\debug\.cache.json
+138 verbose correctMkdir D:\Develop\nodejs\node_cache correctMkdir not in flight; initializing
+139 verbose outdated not updating debug because it's currently at the maximum version that matches its specified semver range
+140 verbose outdated not updating express because it's currently at the maximum version that matches its specified semver range
+141 verbose outdated not updating redis because it's currently at the maximum version that matches its specified semver range
+142 info outdated updating [ { dep:
+142 info outdated      { package: [Object],
+142 info outdated        path: 'C:\\Users\\小万\\Desktop\\express2\\shoutbox',
+142 info outdated        parent: [Object],
+142 info outdated        isMissing: true },
+142 info outdated     depname: 'bcrypt',
+142 info outdated     current: undefined,
+142 info outdated     wanted: '0.7.8',
+142 info outdated     latest: '1.0.3',
+142 info outdated     req: '~0.7.3',
+142 info outdated     what: 'bcrypt@0.7.8' } ]
+143 silly loadCurrentTree Starting
+144 silly install loadCurrentTree
+145 silly install readLocalPackageData
+146 silly fetchPackageMetaData bcrypt@0.7.8
+147 silly fetchNamedPackageData bcrypt
+148 silly mapToRegistry name bcrypt
+149 silly mapToRegistry using default registry
+150 silly mapToRegistry registry https://registry.npmjs.org/
+151 silly mapToRegistry data Result {
+151 silly mapToRegistry   raw: 'bcrypt',
+151 silly mapToRegistry   scope: null,
+151 silly mapToRegistry   escapedName: 'bcrypt',
+151 silly mapToRegistry   name: 'bcrypt',
+151 silly mapToRegistry   rawSpec: '',
+151 silly mapToRegistry   spec: 'latest',
+151 silly mapToRegistry   type: 'tag' }
+152 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+153 verbose get https://registry.npmjs.org/bcrypt not expired, no request
+154 silly install normalizeTree
+155 silly loadCurrentTree Finishing
+156 silly loadIdealTree Starting
+157 silly install loadIdealTree
+158 silly cloneCurrentTree Starting
+159 silly install cloneCurrentTreeToIdealTree
+160 silly cloneCurrentTree Finishing
+161 silly loadShrinkwrap Starting
+162 silly install loadShrinkwrap
+163 silly loadShrinkwrap Finishing
+164 silly loadAllDepsIntoIdealTree Starting
+165 silly install loadAllDepsIntoIdealTree
+166 silly resolveWithNewModule bcrypt@0.7.8 checking installable status
+167 silly cache add args [ 'bcrypt@0.7.8', null ]
+168 verbose cache add spec bcrypt@0.7.8
+169 silly cache add parsed spec Result {
+169 silly cache add   raw: 'bcrypt@0.7.8',
+169 silly cache add   scope: null,
+169 silly cache add   escapedName: 'bcrypt',
+169 silly cache add   name: 'bcrypt',
+169 silly cache add   rawSpec: '0.7.8',
+169 silly cache add   spec: '0.7.8',
+169 silly cache add   type: 'version' }
+170 silly addNamed bcrypt@0.7.8
+171 verbose addNamed "0.7.8" is a plain semver version for bcrypt
+172 silly mapToRegistry name bcrypt
+173 silly mapToRegistry using default registry
+174 silly mapToRegistry registry https://registry.npmjs.org/
+175 silly mapToRegistry data Result {
+175 silly mapToRegistry   raw: 'bcrypt',
+175 silly mapToRegistry   scope: null,
+175 silly mapToRegistry   escapedName: 'bcrypt',
+175 silly mapToRegistry   name: 'bcrypt',
+175 silly mapToRegistry   rawSpec: '',
+175 silly mapToRegistry   spec: 'latest',
+175 silly mapToRegistry   type: 'tag' }
+176 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+177 verbose addNameVersion registry:https://registry.npmjs.org/bcrypt not in flight; fetching
+178 verbose get https://registry.npmjs.org/bcrypt not expired, no request
+179 silly cache afterAdd bcrypt@0.7.8
+180 verbose afterAdd D:\Develop\nodejs\node_cache\bcrypt\0.7.8\package\package.json not in flight; writing
+181 verbose correctMkdir D:\Develop\nodejs\node_cache correctMkdir not in flight; initializing
+182 verbose afterAdd D:\Develop\nodejs\node_cache\bcrypt\0.7.8\package\package.json written
+183 silly fetchNamedPackageData bindings
+184 silly mapToRegistry name bindings
+185 silly mapToRegistry using default registry
+186 silly mapToRegistry registry https://registry.npmjs.org/
+187 silly mapToRegistry data Result {
+187 silly mapToRegistry   raw: 'bindings',
+187 silly mapToRegistry   scope: null,
+187 silly mapToRegistry   escapedName: 'bindings',
+187 silly mapToRegistry   name: 'bindings',
+187 silly mapToRegistry   rawSpec: '',
+187 silly mapToRegistry   spec: 'latest',
+187 silly mapToRegistry   type: 'tag' }
+188 silly mapToRegistry uri https://registry.npmjs.org/bindings
+189 verbose request uri https://registry.npmjs.org/bindings
+190 verbose request no auth needed
+191 info attempt registry request try #1 at 19:43:45
+192 verbose etag "5a1d3205-4c42"
+193 verbose lastModified Tue, 28 Nov 2017 9:53:09 GMT
+194 http request GET https://registry.npmjs.org/bindings
+195 http 304 https://registry.npmjs.org/bindings
+196 verbose headers { date: 'Mon, 18 Dec 2017 11:43:48 GMT',
+196 verbose headers   via: '1.1 varnish',
+196 verbose headers   'cache-control': 'max-age=300',
+196 verbose headers   etag: '"5a1d3205-4c42"',
+196 verbose headers   age: '10271',
+196 verbose headers   connection: 'keep-alive',
+196 verbose headers   'x-served-by': 'cache-hnd18721-HND',
+196 verbose headers   'x-cache': 'HIT',
+196 verbose headers   'x-cache-hits': '32',
+196 verbose headers   'x-timer': 'S1513597428.160541,VS0,VE0',
+196 verbose headers   vary: 'Accept-Encoding, Accept' }
+197 silly get cb [ 304,
+197 silly get   { date: 'Mon, 18 Dec 2017 11:43:48 GMT',
+197 silly get     via: '1.1 varnish',
+197 silly get     'cache-control': 'max-age=300',
+197 silly get     etag: '"5a1d3205-4c42"',
+197 silly get     age: '10271',
+197 silly get     connection: 'keep-alive',
+197 silly get     'x-served-by': 'cache-hnd18721-HND',
+197 silly get     'x-cache': 'HIT',
+197 silly get     'x-cache-hits': '32',
+197 silly get     'x-timer': 'S1513597428.160541,VS0,VE0',
+197 silly get     vary: 'Accept-Encoding, Accept' } ]
+198 verbose etag https://registry.npmjs.org/bindings from cache
+199 verbose get saving bindings to D:\Develop\nodejs\node_cache\registry.npmjs.org\bindings\.cache.json
+200 verbose correctMkdir D:\Develop\nodejs\node_cache correctMkdir not in flight; initializing
+201 silly resolveWithNewModule bindings@1.0.0 checking installable status
+202 silly cache add args [ 'bindings@1.0.0', null ]
+203 verbose cache add spec bindings@1.0.0
+204 silly cache add parsed spec Result {
+204 silly cache add   raw: 'bindings@1.0.0',
+204 silly cache add   scope: null,
+204 silly cache add   escapedName: 'bindings',
+204 silly cache add   name: 'bindings',
+204 silly cache add   rawSpec: '1.0.0',
+204 silly cache add   spec: '1.0.0',
+204 silly cache add   type: 'version' }
+205 silly addNamed bindings@1.0.0
+206 verbose addNamed "1.0.0" is a plain semver version for bindings
+207 silly mapToRegistry name bindings
+208 silly mapToRegistry using default registry
+209 silly mapToRegistry registry https://registry.npmjs.org/
+210 silly mapToRegistry data Result {
+210 silly mapToRegistry   raw: 'bindings',
+210 silly mapToRegistry   scope: null,
+210 silly mapToRegistry   escapedName: 'bindings',
+210 silly mapToRegistry   name: 'bindings',
+210 silly mapToRegistry   rawSpec: '',
+210 silly mapToRegistry   spec: 'latest',
+210 silly mapToRegistry   type: 'tag' }
+211 silly mapToRegistry uri https://registry.npmjs.org/bindings
+212 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+213 verbose get https://registry.npmjs.org/bindings not expired, no request
+214 silly cache afterAdd bindings@1.0.0
+215 verbose afterAdd D:\Develop\nodejs\node_cache\bindings\1.0.0\package\package.json not in flight; writing
+216 verbose correctMkdir D:\Develop\nodejs\node_cache correctMkdir not in flight; initializing
+217 verbose afterAdd D:\Develop\nodejs\node_cache\bindings\1.0.0\package\package.json written
+218 silly loadAllDepsIntoIdealTree Finishing
+219 silly loadIdealTree Finishing
+220 silly currentTree shoutbox@0.0.0
+220 silly currentTree +-- accepts@1.3.4
+220 silly currentTree +-- array-flatten@1.1.1
+220 silly currentTree +-- basic-auth@2.0.0
+220 silly currentTree +-- body-parser@1.18.2
+220 silly currentTree +-- bytes@3.0.0
+220 silly currentTree +-- content-disposition@0.5.2
+220 silly currentTree +-- content-type@1.0.4
+220 silly currentTree +-- cookie-parser@1.4.3
+220 silly currentTree +-- cookie-signature@1.0.6
+220 silly currentTree +-- cookie@0.3.1
+220 silly currentTree +-- debug@2.6.9
+220 silly currentTree +-- depd@1.1.1
+220 silly currentTree +-- destroy@1.0.4
+220 silly currentTree +-- ee-first@1.1.1
+220 silly currentTree +-- ejs@2.5.7
+220 silly currentTree +-- encodeurl@1.0.1
+220 silly currentTree +-- escape-html@1.0.3
+220 silly currentTree +-- etag@1.8.1
+220 silly currentTree +-- express@4.15.5
+220 silly currentTree | +-- qs@6.5.0
+220 silly currentTree | `-- statuses@1.3.1
+220 silly currentTree +-- finalhandler@1.0.6
+220 silly currentTree | `-- statuses@1.3.1
+220 silly currentTree +-- forwarded@0.1.2
+220 silly currentTree +-- fresh@0.5.2
+220 silly currentTree +-- http-errors@1.6.2
+220 silly currentTree +-- iconv-lite@0.4.19
+220 silly currentTree +-- inherits@2.0.3
+220 silly currentTree +-- ipaddr.js@1.4.0
+220 silly currentTree +-- media-typer@0.3.0
+220 silly currentTree +-- merge-descriptors@1.0.1
+220 silly currentTree +-- methods@1.1.2
+220 silly currentTree +-- mime-db@1.30.0
+220 silly currentTree +-- mime-types@2.1.17
+220 silly currentTree +-- mime@1.3.4
+220 silly currentTree +-- morgan@1.9.0
+220 silly currentTree +-- ms@2.0.0
+220 silly currentTree +-- negotiator@0.6.1
+220 silly currentTree +-- on-finished@2.3.0
+220 silly currentTree +-- on-headers@1.0.1
+220 silly currentTree +-- parseurl@1.3.2
+220 silly currentTree +-- path-to-regexp@0.1.7
+220 silly currentTree +-- proxy-addr@1.1.5
+220 silly currentTree +-- qs@6.5.1
+220 silly currentTree +-- range-parser@1.2.0
+220 silly currentTree +-- raw-body@2.3.2
+220 silly currentTree +-- redis@0.7.3
+220 silly currentTree +-- safe-buffer@5.1.1
+220 silly currentTree +-- send@0.15.6
+220 silly currentTree | `-- statuses@1.3.1
+220 silly currentTree +-- serve-favicon@2.4.5
+220 silly currentTree +-- serve-static@1.12.6
+220 silly currentTree +-- setprototypeof@1.0.3
+220 silly currentTree +-- statuses@1.4.0
+220 silly currentTree +-- type-is@1.6.15
+220 silly currentTree +-- unpipe@1.0.0
+220 silly currentTree +-- utils-merge@1.0.0
+220 silly currentTree `-- vary@1.1.2
+221 silly idealTree shoutbox@0.0.0
+221 silly idealTree +-- accepts@1.3.4
+221 silly idealTree +-- array-flatten@1.1.1
+221 silly idealTree +-- basic-auth@2.0.0
+221 silly idealTree +-- bcrypt@0.7.8
+221 silly idealTree +-- bindings@1.0.0
+221 silly idealTree +-- body-parser@1.18.2
+221 silly idealTree +-- bytes@3.0.0
+221 silly idealTree +-- content-disposition@0.5.2
+221 silly idealTree +-- content-type@1.0.4
+221 silly idealTree +-- cookie-parser@1.4.3
+221 silly idealTree +-- cookie-signature@1.0.6
+221 silly idealTree +-- cookie@0.3.1
+221 silly idealTree +-- debug@2.6.9
+221 silly idealTree +-- depd@1.1.1
+221 silly idealTree +-- destroy@1.0.4
+221 silly idealTree +-- ee-first@1.1.1
+221 silly idealTree +-- ejs@2.5.7
+221 silly idealTree +-- encodeurl@1.0.1
+221 silly idealTree +-- escape-html@1.0.3
+221 silly idealTree +-- etag@1.8.1
+221 silly idealTree +-- express@4.15.5
+221 silly idealTree | +-- qs@6.5.0
+221 silly idealTree | `-- statuses@1.3.1
+221 silly idealTree +-- finalhandler@1.0.6
+221 silly idealTree | `-- statuses@1.3.1
+221 silly idealTree +-- forwarded@0.1.2
+221 silly idealTree +-- fresh@0.5.2
+221 silly idealTree +-- http-errors@1.6.2
+221 silly idealTree +-- iconv-lite@0.4.19
+221 silly idealTree +-- inherits@2.0.3
+221 silly idealTree +-- ipaddr.js@1.4.0
+221 silly idealTree +-- media-typer@0.3.0
+221 silly idealTree +-- merge-descriptors@1.0.1
+221 silly idealTree +-- methods@1.1.2
+221 silly idealTree +-- mime-db@1.30.0
+221 silly idealTree +-- mime-types@2.1.17
+221 silly idealTree +-- mime@1.3.4
+221 silly idealTree +-- morgan@1.9.0
+221 silly idealTree +-- ms@2.0.0
+221 silly idealTree +-- negotiator@0.6.1
+221 silly idealTree +-- on-finished@2.3.0
+221 silly idealTree +-- on-headers@1.0.1
+221 silly idealTree +-- parseurl@1.3.2
+221 silly idealTree +-- path-to-regexp@0.1.7
+221 silly idealTree +-- proxy-addr@1.1.5
+221 silly idealTree +-- qs@6.5.1
+221 silly idealTree +-- range-parser@1.2.0
+221 silly idealTree +-- raw-body@2.3.2
+221 silly idealTree +-- redis@0.7.3
+221 silly idealTree +-- safe-buffer@5.1.1
+221 silly idealTree +-- send@0.15.6
+221 silly idealTree | `-- statuses@1.3.1
+221 silly idealTree +-- serve-favicon@2.4.5
+221 silly idealTree +-- serve-static@1.12.6
+221 silly idealTree +-- setprototypeof@1.0.3
+221 silly idealTree +-- statuses@1.4.0
+221 silly idealTree +-- type-is@1.6.15
+221 silly idealTree +-- unpipe@1.0.0
+221 silly idealTree +-- utils-merge@1.0.0
+221 silly idealTree `-- vary@1.1.2
+222 silly generateActionsToTake Starting
+223 silly install generateActionsToTake
+224 silly generateActionsToTake Finishing
+225 silly diffTrees action count 2
+226 silly diffTrees add bindings@1.0.0
+227 silly diffTrees add bcrypt@0.7.8
+228 silly decomposeActions action count 16
+229 silly decomposeActions fetch bindings@1.0.0
+230 silly decomposeActions extract bindings@1.0.0
+231 silly decomposeActions test bindings@1.0.0
+232 silly decomposeActions preinstall bindings@1.0.0
+233 silly decomposeActions build bindings@1.0.0
+234 silly decomposeActions install bindings@1.0.0
+235 silly decomposeActions postinstall bindings@1.0.0
+236 silly decomposeActions finalize bindings@1.0.0
+237 silly decomposeActions fetch bcrypt@0.7.8
+238 silly decomposeActions extract bcrypt@0.7.8
+239 silly decomposeActions test bcrypt@0.7.8
+240 silly decomposeActions preinstall bcrypt@0.7.8
+241 silly decomposeActions build bcrypt@0.7.8
+242 silly decomposeActions install bcrypt@0.7.8
+243 silly decomposeActions postinstall bcrypt@0.7.8
+244 silly decomposeActions finalize bcrypt@0.7.8
+245 silly runTopLevelLifecycles Starting
+246 silly executeActions Starting
+247 silly install executeActions
+248 silly doSerial global-install 0
+249 silly doParallel fetch 2
+250 verbose correctMkdir D:\Develop\nodejs\node_cache\_locks correctMkdir not in flight; initializing
+251 verbose lock using D:\Develop\nodejs\node_cache\_locks\staging-1b7b215134da1aca.lock for C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging
+252 silly doParallel extract 2
+253 silly extract bindings@1.0.0
+254 silly extract bcrypt@0.7.8
+255 verbose unbuild node_modules\.staging\bindings-a6789706
+256 verbose unbuild node_modules\.staging\bcrypt-e5f00a40
+257 silly gentlyRm C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bindings-a6789706 is being purged from base C:\Users\小万\Desktop\express2\shoutbox
+258 verbose gentlyRm don't care about contents; nuking C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bindings-a6789706
+259 silly gentlyRm C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bcrypt-e5f00a40 is being purged from base C:\Users\小万\Desktop\express2\shoutbox
+260 verbose gentlyRm don't care about contents; nuking C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bcrypt-e5f00a40
+261 verbose tar unpack D:\Develop\nodejs\node_cache\bindings\1.0.0\package.tgz
+262 verbose tar unpacking to C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bindings-a6789706
+263 silly gentlyRm C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bindings-a6789706 is being purged
+264 verbose gentlyRm don't care about contents; nuking C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bindings-a6789706
+265 verbose tar unpack D:\Develop\nodejs\node_cache\bcrypt\0.7.8\package.tgz
+266 verbose tar unpacking to C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bcrypt-e5f00a40
+267 silly gentlyRm C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bcrypt-e5f00a40 is being purged
+268 verbose gentlyRm don't care about contents; nuking C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bcrypt-e5f00a40
+269 silly gunzTarPerm modes [ '777', '666' ]
+270 silly gunzTarPerm modes [ '777', '666' ]
+271 silly gunzTarPerm extractEntry package.json
+272 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+273 silly gunzTarPerm extractEntry package.json
+274 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+275 silly gunzTarPerm extractEntry README.md
+276 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+277 silly gunzTarPerm extractEntry bindings.js
+278 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+279 silly gunzTarPerm extractEntry .npmignore
+280 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+281 silly gunzTarPerm extractEntry README.md
+282 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+283 silly gunzTarPerm extractEntry LICENSE
+284 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+285 silly gunzTarPerm extractEntry bcrypt.js
+286 silly gunzTarPerm modified mode [ 'bcrypt.js', 420, 438 ]
+287 silly gunzTarPerm extractEntry Makefile
+288 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+289 silly gunzTarPerm extractEntry .travis.yml
+290 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+291 silly gunzTarPerm extractEntry binding.gyp
+292 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+293 silly gunzTarPerm extractEntry examples/async_compare.js
+294 silly gunzTarPerm modified mode [ 'examples/async_compare.js', 420, 438 ]
+295 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+296 silly gunzTarPerm modified mode [ 'examples/forever_gen_salt.js', 420, 438 ]
+297 silly gentlyRm C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bindings-a6789706\node_modules is being purged
+298 verbose gentlyRm don't care about contents; nuking C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bindings-a6789706\node_modules
+299 silly gunzTarPerm extractEntry CHANGELOG
+300 silly gunzTarPerm modified mode [ 'CHANGELOG', 420, 438 ]
+301 silly gunzTarPerm extractEntry src/bcrypt.cc
+302 silly gunzTarPerm modified mode [ 'src/bcrypt.cc', 420, 438 ]
+303 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+304 silly gunzTarPerm modified mode [ 'src/bcrypt_node.cc', 420, 438 ]
+305 silly gunzTarPerm extractEntry src/blowfish.cc
+306 silly gunzTarPerm modified mode [ 'src/blowfish.cc', 420, 438 ]
+307 silly gunzTarPerm extractEntry src/node_blf.h
+308 silly gunzTarPerm modified mode [ 'src/node_blf.h', 420, 438 ]
+309 silly gunzTarPerm extractEntry test/async.js
+310 silly gunzTarPerm modified mode [ 'test/async.js', 420, 438 ]
+311 silly gunzTarPerm extractEntry test/repetitions.js
+312 silly gunzTarPerm modified mode [ 'test/repetitions.js', 420, 438 ]
+313 silly gunzTarPerm extractEntry test/sync.js
+314 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 438 ]
+315 silly gentlyRm C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bcrypt-e5f00a40\node_modules is being purged
+316 verbose gentlyRm don't care about contents; nuking C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bcrypt-e5f00a40\node_modules
+317 silly doParallel preinstall 2
+318 silly preinstall bindings@1.0.0 C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bindings-a6789706
+319 info lifecycle bindings@1.0.0~preinstall: bindings@1.0.0
+320 silly preinstall bcrypt@0.7.8 C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bcrypt-e5f00a40
+321 info lifecycle bcrypt@0.7.8~preinstall: bcrypt@0.7.8
+322 silly lifecycle bindings@1.0.0~preinstall: no script for preinstall, continuing
+323 silly lifecycle bcrypt@0.7.8~preinstall: no script for preinstall, continuing
+324 silly doReverseSerial remove 0
+325 silly doSerial move 0
+326 silly doSerial finalize 2
+327 silly finalize C:\Users\小万\Desktop\express2\shoutbox\node_modules\bindings
+328 silly finalize C:\Users\小万\Desktop\express2\shoutbox\node_modules\bcrypt
+329 silly doSerial build 2
+330 silly build bindings@1.0.0
+331 info linkStuff bindings@1.0.0
+332 silly linkStuff bindings@1.0.0 has C:\Users\小万\Desktop\express2\shoutbox\node_modules as its parent node_modules
+333 verbose linkBins bindings@1.0.0
+334 verbose linkMans bindings@1.0.0
+335 silly build bcrypt@0.7.8
+336 info linkStuff bcrypt@0.7.8
+337 silly linkStuff bcrypt@0.7.8 has C:\Users\小万\Desktop\express2\shoutbox\node_modules as its parent node_modules
+338 verbose linkBins bcrypt@0.7.8
+339 verbose linkMans bcrypt@0.7.8
+340 silly doSerial global-link 0
+341 silly doParallel update-linked 0
+342 silly doSerial install 2
+343 silly install bindings@1.0.0 C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bindings-a6789706
+344 info lifecycle bindings@1.0.0~install: bindings@1.0.0
+345 silly lifecycle bindings@1.0.0~install: no script for install, continuing
+346 silly install bcrypt@0.7.8 C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging\bcrypt-e5f00a40
+347 info lifecycle bcrypt@0.7.8~install: bcrypt@0.7.8
+348 verbose lifecycle bcrypt@0.7.8~install: unsafe-perm in lifecycle true
+349 verbose lifecycle bcrypt@0.7.8~install: PATH: F:\node\node_modules\npm\bin\node-gyp-bin;C:\Users\小万\Desktop\express2\shoutbox\node_modules\bcrypt\node_modules\.bin;C:\Users\小万\Desktop\express2\shoutbox\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;D:\python\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;F:\node\node_global;F:\git\Git\cmd;F:\node\;C:\Users\小万\AppData\Local\Microsoft\WindowsApps;C:\Users\小万\AppData\Local\GitHubDesktop\bin;D:\java  jdk\bin;F:\node\node_global;C:\Users\小万\AppData\Roaming\npm;C:\Users\小万\AppData\Local\atom\bin;C:\Users\小万\AppData\Local\Programs\Fiddler;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
+350 verbose lifecycle bcrypt@0.7.8~install: CWD: C:\Users\小万\Desktop\express2\shoutbox\node_modules\bcrypt
+351 silly lifecycle bcrypt@0.7.8~install: Args: [ '/d /s /c', 'node-gyp rebuild' ]
+352 silly lifecycle bcrypt@0.7.8~install: Returned: code: 1  signal: null
+353 info lifecycle bcrypt@0.7.8~install: Failed to exec install script
+354 verbose unlock done using D:\Develop\nodejs\node_cache\_locks\staging-1b7b215134da1aca.lock for C:\Users\小万\Desktop\express2\shoutbox\node_modules\.staging
+355 silly rollbackFailedOptional Starting
+356 silly rollbackFailedOptional Finishing
+357 silly runTopLevelLifecycles Finishing
+358 silly install printInstalled
+359 verbose stack Error: bcrypt@0.7.8 install: `node-gyp rebuild`
+359 verbose stack Exit status 1
+359 verbose stack     at EventEmitter.<anonymous> (F:\node\node_modules\npm\lib\utils\lifecycle.js:255:16)
+359 verbose stack     at emitTwo (events.js:106:13)
+359 verbose stack     at EventEmitter.emit (events.js:191:7)
+359 verbose stack     at ChildProcess.<anonymous> (F:\node\node_modules\npm\lib\utils\spawn.js:40:14)
+359 verbose stack     at emitTwo (events.js:106:13)
+359 verbose stack     at ChildProcess.emit (events.js:191:7)
+359 verbose stack     at maybeClose (internal/child_process.js:920:16)
+359 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
+360 verbose pkgid bcrypt@0.7.8
+361 verbose cwd C:\Users\小万\Desktop\express2\shoutbox
+362 error Windows_NT 10.0.16299
+363 error argv "F:\\node\\node.exe" "F:\\node\\node_modules\\npm\\bin\\npm-cli.js" "update" "--scripts-prepend-node-path=auto"
+364 error node v6.11.5
+365 error npm  v3.10.10
+366 error code ELIFECYCLE
+367 error bcrypt@0.7.8 install: `node-gyp rebuild`
+367 error Exit status 1
+368 error Failed at the bcrypt@0.7.8 install script 'node-gyp rebuild'.
+368 error Make sure you have the latest version of node.js and npm installed.
+368 error If you do, this is most likely a problem with the bcrypt package,
+368 error not with npm itself.
+368 error Tell the author that this fails on your system:
+368 error     node-gyp rebuild
+368 error You can get information on how to open an issue for this project with:
+368 error     npm bugs bcrypt
+368 error Or if that isn't available, you can get their info via:
+368 error     npm owner ls bcrypt
+368 error There is likely additional logging output above.
+369 verbose exit [ 1, true ]
