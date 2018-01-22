@@ -7,6 +7,7 @@ var async = require("async");               //流程控制
 var gbk = require("gbk");                   //转编码
 var fs = require("fs");                     //文件
 var mysql=require('mysql');                 //调用数据库模块
+var cronJob = require("cron").CronJob;
 
 //调用包装好的数据库文件
 var dbSqlConfig = require("./libs/dbConfig");
@@ -22,51 +23,108 @@ var DetTimeInfo = require("./libs/DetUselessInfo").DetTimeInfo;//处理时间
 var todayNewsInfo = require("./libs/getAllUrl");
 
 var allInfo = [];
-(function () {
-    async.waterfall([
-        function getAllNewsUrl(next) {
-            var options = {
-                url:"https://news.zhibo8.cc/nba/",
-                encoding:null,
-            };
-            request(options, function (error, response, body){
-                if (!error && response.statusCode == 200){
-                    next(null, body);
-                }
-                else{
-                    console.log(error);
-                }
-            });
-        },
-        function(body,next) {
-            var result = gbk.toString('utf-8', body);
-            next(null, body);
-        },
-        function(html,next) {
-            var $ = cheerio.load(html,{decodeEntities: false});
-            var todayNewsInfo = $(".topleftbox a");
-            var urlArry=[];
-            for(var i=0;i<todayNewsInfo.length;i++){
-                urlArry[i]=todayNewsInfo[i].attribs.href;
-            }
-            next(null,urlArry);
-        }
-    ], function (err, result) {
-        for(i=0;i<result.length;i++){
-            allInfo.push(getPageAsync("https:"+result[i]));
-        }
-        Promise
-            .all(allInfo)
-            .then(function(pages){
-                var coursesData = [];
-                pages.forEach(function(html){
-                    var curses = filterChapters(html);
-                    coursesData.push(curses);
+var bannerInfo  = [];
+function everyBanner(){
+    this.bannerImg = null;
+    this.bannerTit = null;
+    this.bannerSrc = null;
+}
+//定时执行任务  启用CornJob
+//从早上8点到下午18点，每隔半个小时执行一次，会在0分和30分处执行，以亚洲重庆时间为准
+//new cronJob('* */30 8-18 * * *', function () {
+    //定期要执行的任务
+    (function () {
+        async.waterfall([
+            function getbannerInfo(next){
+                var options = {
+                    url:"http://tu.zhibo8.cc/home/tonews/nba",
+                    encoding:null,
+                };
+                request(options, function (error, response, body){
+                    if (!error && response.statusCode == 200){
+                        next(null, body);
+                    }
+                    else{
+                        console.log(error);
+                    }
                 });
-                printCourseInfo(coursesData);
-            });
-    });
-})();
+            },
+            function(body,next) {
+                var result = gbk.toString('utf-8', body);
+                next(null, body);
+            },
+            function(html,next)
+            {
+                var $ = cheerio.load(html,{decodeEntities: false});
+                var bannerSrcList = $("#slider ul li a");
+                var bannerImgList = $("#slider ul li a img");
+                var bannerTitList = $(".info b");
+                for(var i=0,len = bannerSrcList.length;i<len;i++){
+                    var everyInfo = new everyBanner();
+                    everyInfo.bannerSrc = "http://tu.zhibo8.cc"+ bannerSrcList[i].attribs.href;
+                    everyInfo.bannerImg = "http:"+ bannerImgList[i].attribs.src;
+                    everyInfo.bannerTit =  bannerTitList[i].children.data;
+                    bannerInfo[i]=everyInfo;
+                }
+                next(null);
+            },
+            function pushBannerInfo(next){
+                //上传到数据库
+                for(var i=0;i<bannerInfo.length;i++){
+                    db.query(userSql.insertBannerInfo,[i+1,bannerInfo[i].bannerTit,null,bannerInfo[i].bannerImg,bannerInfo[i].bannerSrc],function(err){
+                        if(err){
+                            console.log(err);
+                        }
+                    });
+                }
+                next(null);
+            },
+            function getAllNewsUrl(next) {
+                var options = {
+                    url:"https://news.zhibo8.cc/nba/",
+                    encoding:null,
+                };
+                request(options, function (error, response, body){
+                    if (!error && response.statusCode == 200){
+                        next(null, body);
+                    }
+                    else{
+                        console.log(error);
+                    }
+                });
+            },
+            function(body,next) {
+                var result = gbk.toString('utf-8', body);
+                next(null, body);
+            },
+            function(html,next) {
+                var $ = cheerio.load(html,{decodeEntities: false});
+                var todayNewsInfo = $(".topleftbox a");
+                var urlArry=[];
+                for(var i=0;i<todayNewsInfo.length;i++){
+                    urlArry[i]=todayNewsInfo[i].attribs.href;
+                }
+                next(null,urlArry);
+            }
+        ], function (err, result) {
+            for(i=0;i<result.length;i++){
+                allInfo.push(getPageAsync("https:"+result[i]));
+            }
+            Promise
+                .all(allInfo)
+                .then(function(pages){
+                    var coursesData = [];
+                    pages.forEach(function(html){
+                        var curses = filterChapters(html);
+                        coursesData.push(curses);
+                    });
+                    printInfoToMysql(coursesData);
+                });
+        });
+    })();
+//}, null, true, 'Asia/Chongqing');
+
+
 function filterChapters(html){
     var $ = cheerio.load(html,{decodeEntities: false});
     var NewsTitleInfo = $(" .title h1").text();
@@ -83,14 +141,23 @@ function filterChapters(html){
     return  NewsInfo;
 }
 //添加到数据库
-function printCourseInfo(cursesData){
-    for(var i=0;i<cursesData.length;i++){
-        db.query(userSql.insertArticleInfo,[i+1,"篮球机长","images/sun.jpg",cursesData[i].title,cursesData[i].time,cursesData[i].title,cursesData[i].content,1],function(err){
-            if(err){
-                console.log(err);
+function printInfoToMysql(cursesData){
+    //清空上次传送数据
+    db.query(userSql.deleteAllInfo,function (err) {
+        if(err){
+            console.log("删除信息失败！");
+        }
+        else{
+            //传输本次数据
+            for(var i=0;i<cursesData.length;i++){
+                db.query(userSql.insertArticleInfo,[i+1,"篮球机长","images/sun.jpg",cursesData[i].title,cursesData[i].time,cursesData[i].title,cursesData[i].content,1],function(err){
+                    if(err){
+                        console.log(err);
+                    }
+                });
             }
-        });
-    }
+        }
+    });
 }
 //异步爬取每个网页(url)的信息
 function getPageAsync(url){
