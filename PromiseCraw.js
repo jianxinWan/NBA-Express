@@ -59,24 +59,32 @@ function everyBanner(){
                 var bannerSrcList = $("#slider ul li a");
                 var bannerImgList = $("#slider ul li a img");
                 var bannerTitList = $(".info b");
+                //清空上次轮播数据
                 for(var i=0,len = bannerSrcList.length;i<len;i++){
                     var everyInfo = new everyBanner();
                     everyInfo.bannerSrc = "http://tu.zhibo8.cc"+ bannerSrcList[i].attribs.href;
                     everyInfo.bannerImg = "http:"+ bannerImgList[i].attribs.src;
-                    everyInfo.bannerTit =  bannerTitList[i].children.data;
+                    everyInfo.bannerTit =  bannerTitList[i].children[0].data;
                     bannerInfo[i]=everyInfo;
                 }
                 next(null);
             },
             function pushBannerInfo(next){
                 //上传到数据库
-                for(var i=0;i<bannerInfo.length;i++){
-                    db.query(userSql.insertBannerInfo,[i+1,bannerInfo[i].bannerTit,null,bannerInfo[i].bannerImg,bannerInfo[i].bannerSrc],function(err){
+                    db.query(userSql.deleteAllBannerInfo, function (err) {
                         if(err){
-                            console.log(err);
+                            console.log("清除数据失败！！");
+                        }
+                        else{
+                            for(var i=0;i<bannerInfo.length;i++) {
+                                db.query(userSql.insertBannerInfo, [i + 1, bannerInfo[i].bannerTit, null, bannerInfo[i].bannerImg, bannerInfo[i].bannerSrc], function (err) {
+                                    if (err) {
+                                        console.log(err);
+                                    }
+                                });
+                            }
                         }
                     });
-                }
                 next(null);
             },
             function getAllNewsUrl(next) {
